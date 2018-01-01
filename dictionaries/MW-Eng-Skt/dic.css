@@ -1,0 +1,39 @@
+.resulttable {
+width:60%;
+margin-left:auto;
+margin-right:auto;
+border: thick  solid gray;
+}
+.container {
+width:100%;
+background-color:#696969;
+color:white;
+height:170px;
+
+
+}
+a {
+color:white;
+font-family:verdana;
+font-size:20px;
+padding:5px;
+font-style:bold;
+text-decoration:none;
+}
+a:hover {
+font-size:30px;
+text-decoration:underline;
+
+}
+.textbox {
+font-family:verdana;
+font-weight:bold;
+font-size:24;
+
+}
+.button {
+font-family:verdana;
+font-size:24;
+
+}
+

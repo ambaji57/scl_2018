@@ -1,0 +1,198 @@
+Terminals unused in grammar
+
+   niRTa
+   vqwwi
+   nirUpiwa
+   nirUpaka
+   avacCinna
+   avacCexaka
+   aBAva
+
+
+Grammar
+
+    0 $accept: examples $end
+
+    1 examples: example
+    2         | examples example
+
+    3 example: compound '\n'
+
+    4 compound: Ppada '-' Upada
+
+    5 Ppada: '<' pada
+
+    6 Upada: pada '>'
+
+    7 pada: compound
+    8     | concept
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'\n' (10) 3
+'-' (45) 4
+'<' (60) 5
+'>' (62) 6
+error (256)
+niRTa (258)
+vqwwi (259)
+nirUpiwa (260)
+nirUpaka (261)
+avacCinna (262)
+avacCexaka (263)
+aBAva (264)
+concept (265) 8
+
+
+Nonterminals, with rules where they appear
+
+$accept (15)
+    on left: 0
+examples (16)
+    on left: 1 2, on right: 0 2
+example (17)
+    on left: 3, on right: 1 2
+compound (18)
+    on left: 4, on right: 3 7
+Ppada (19)
+    on left: 5, on right: 4
+Upada (20)
+    on left: 6, on right: 4
+pada (21)
+    on left: 7 8, on right: 5 6
+
+
+State 0
+
+    0 $accept: . examples $end
+
+    '<'  shift, and go to state 1
+
+    examples  go to state 2
+    example   go to state 3
+    compound  go to state 4
+    Ppada     go to state 5
+
+
+State 1
+
+    5 Ppada: '<' . pada
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 1
+
+    compound  go to state 7
+    Ppada     go to state 5
+    pada      go to state 8
+
+
+State 2
+
+    0 $accept: examples . $end
+    2 examples: examples . example
+
+    $end  shift, and go to state 9
+    '<'   shift, and go to state 1
+
+    example   go to state 10
+    compound  go to state 4
+    Ppada     go to state 5
+
+
+State 3
+
+    1 examples: example .
+
+    $default  reduce using rule 1 (examples)
+
+
+State 4
+
+    3 example: compound . '\n'
+
+    '\n'  shift, and go to state 11
+
+
+State 5
+
+    4 compound: Ppada . '-' Upada
+
+    '-'  shift, and go to state 12
+
+
+State 6
+
+    8 pada: concept .
+
+    $default  reduce using rule 8 (pada)
+
+
+State 7
+
+    7 pada: compound .
+
+    $default  reduce using rule 7 (pada)
+
+
+State 8
+
+    5 Ppada: '<' pada .
+
+    $default  reduce using rule 5 (Ppada)
+
+
+State 9
+
+    0 $accept: examples $end .
+
+    $default  accept
+
+
+State 10
+
+    2 examples: examples example .
+
+    $default  reduce using rule 2 (examples)
+
+
+State 11
+
+    3 example: compound '\n' .
+
+    $default  reduce using rule 3 (example)
+
+
+State 12
+
+    4 compound: Ppada '-' . Upada
+
+    concept  shift, and go to state 6
+    '<'      shift, and go to state 1
+
+    compound  go to state 7
+    Ppada     go to state 5
+    Upada     go to state 13
+    pada      go to state 14
+
+
+State 13
+
+    4 compound: Ppada '-' Upada .
+
+    $default  reduce using rule 4 (compound)
+
+
+State 14
+
+    6 Upada: pada . '>'
+
+    '>'  shift, and go to state 15
+
+
+State 15
+
+    6 Upada: pada '>' .
+
+    $default  reduce using rule 6 (Upada)

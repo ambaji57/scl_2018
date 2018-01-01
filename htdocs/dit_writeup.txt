@@ -1,0 +1,21 @@
+Transliteration: Sanskrit is written in several scripts and using various romanised transliterations. This tool provides conversion facility among the romanised transliteration schemes into Devanagari and also from Devanagari into various romanised transliteration schemes.
+
+Morphological Generator: The Morphological Generator shows the subantas and tingantas (inflectional forms of a noun or a verb). It also handles derivational morphology showing kridanta and taddhita forms.
+
+Morphological Analyser: It gives various possible analyses of a Sanskrit word.
+
+Sandhi: This tool joins two Sanskrit words following the Paninian sutras.
+
+Sandhi Splitter: This shows various possible splittings (pada-patha) of a given Sanskrit string, and also the various components in case of a compound. More than one ways of splits are ranked by machine based on the frequency of occurrance in the manually sandhi-split corpus.
+
+Developed by Consortium of 7 Institutes:
+University of Hyderabad; 
+Jawaharlal Nehru University; 
+IIIT-Hyderabad; 
+Sanskrit Academy,Hyderabad; 
+Poornaprajna Vidyaapetha, Bangalore; 
+Rashtriya Sanskrit Vidyapeetha,Tirupati and 
+JRRSU,Jaipur.
+
+Funded by 2008-12 TDIL Programme, Department of Information Technology, 
+MCIT, Govt of India.

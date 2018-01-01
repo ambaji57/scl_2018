@@ -1,0 +1,50 @@
+div#resulttable {
+width:60%;
+margin-left:20%;
+margin-right:20%;
+border: thick  solid gray;
+}
+.label{
+font-family:verdana;
+font-size:20px;
+font-style:bold;
+
+} 
+.container {
+width:100%;
+background-color:#696969;
+color:white;
+height:150px;
+
+
+}
+.ifram {
+background-color:antiquewhite;
+
+
+}
+a {
+color:white;
+font-family:verdana;
+font-size:20px;
+padding:5px;
+font-style:bold;
+text-decoration:none;
+}
+a:hover {
+font-size:30px;
+text-decoration:underline;
+
+}
+.textbox {
+font-family:verdana;
+font-weight:bold;
+font-size:24;
+
+}
+.button {
+font-family:verdana;
+font-size:24;
+
+}
+

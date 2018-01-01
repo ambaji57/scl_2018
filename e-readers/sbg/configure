@@ -1,0 +1,10 @@
+#!/bin/bash
+source ../../spec.txt
+
+# Do not edit the following lines.
+for i in `find . -iname "*.html"`
+do
+perl -i -p -e "s#COUNTER#$COUNTER#g; s#DEPTURL#$DEPTURL#g; s#CGIDIR#$CGIDIR#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g" $i
+done
+
+perl -i -p -e "s#COUNTER#$COUNTER#g; s#DEPTURL#$DEPTURL#g; s#CGIDIR#$CGIDIR#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g" cgi_files/generate.cgi cgi_files/options1.cgi js_files/option.js Makefile

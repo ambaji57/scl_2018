@@ -1,0 +1,348 @@
+				ac-sanXiH
+				---------
+
+iko yaNaci 		kawi+awra
+			nahi+aswi
+			hari+anuBavaH
+			naxI+aswi
+			suXI+upAsyaH
+			maXu+ariH
+			vaXU+Agawa
+			XAwq+aMSaH
+			howQ+aMSaH
+			L+AkqwiH
+
+ecozyAvAyAvaH		kriyawe+iwi
+			kriyawe+eva
+			wasmE+AcaRte
+			SamBo+AgacCa
+			sixXO+api
+
+kRayyajayyO SakyArWe	kRi+ya(.*)
+			ji+ya(.*)(yaw prawyayaH)
+
+krayyaswaxarWe		krI+ya(.*)
+
+vAnwo yi prawyaye	go+yam
+			No+yam
+aXvaparimANe ca(vA)	go+yUwiH
+
+lopah Shakalyasya	hare+ehi
+			viRNo+iha
+			SriyE+udyawaH
+			gurO+uwkaH
+
+Ax guNaH		upa+inxraH
+			upa+ISaH
+			ramA+ISaH
+			ramA+inxraH
+			ramA+umA
+			canxra+upamA
+			sIwA+Uhawe
+			Inxra+UhaH
+			sIwA+qxXiH
+			kqRNa+qxXiH
+			ram+QkaraH
+			sIwA+QkaraH
+			wava+LkAraH
+
+vqxXireci		kqRNa+ekawvam
+			kqRNa+Ekyam
+			ramA+ekawvam
+			ramA+Ekyam
+			ramA+OwkaNTyam
+			canxra+OwkaNTyam
+			sIwA+oGaH
+			Inxra+oGaH
+
+ewyeXaawyUTsu		upa+ewi
+			upa+eXawe and all ejAxirUpas of both Xawus.
+
+svAxIreriNoH(vA)	sva+IraH
+			sva+IriNI and all forms of all viBakwis.
+
+akRAxUhinyAm(vA)	akRa+UhinI and all forms of all viBakwis.
+
+prAxUhoDoDye(vA)	pra+UhaH
+			pra+UDaH
+			pra+UDiH
+			pra+eRaH
+			pra+eRyaH and all forms of all viBakwis.
+
+pravawsawarakambala(vA)	pra+qNam
+			vawsawara+qNam
+			kambala+qNam
+			vasana+qNam
+			daSa+qNam
+			qNa+qNam and all forms of all viBakwis.
+
+upasargaxqwi XAwo	upa/pra/apa/ava+qcCawi and all qkArAxiXAwus.
+
+efi pararUpam		upa/pra/apa/ava+ejawe
+			upa/pra/apa/ava+oRawi and all efAxiXAwus.
+
+
+SaknXvAxiRu pararUpam(vA) Saka+anXuH
+			karka+anXuH
+			kula+atA
+			manas+IRA
+			hala+IRA
+			lAfgala+IRA
+			pawaw+aFjaliH
+			mArwa+aNdaH
+sImanwaH keSaveSaH(vA)	sIman+anwaH
+sArafgaH paSupakRi(vA)	sAra+afgaH
+owvoRTayoH samAse (vA)	sWUla+owuH
+			bimba+oRTaH
+
+akaH savarNe xIrGaH	xEwya+ariH
+			wava+AgrahaH
+			ramA+asti
+			ramA+AgawA
+			SrI+ISaH
+			gacCawi+iwi
+			naxI+iwi
+			gacCawi+ISaH
+			viRNu+uxayaH
+			vaXU+ugrA
+			vaXU+Uhawe
+			viRNu+Uhawe
+			L/howq+qkAraH/LakaraH
+			L/howq+QkArah
+			Q+qkAraH/LakAraH
+			Q+QkArah
+
+efaH paxAnwAxawi	hare+ava
+			viRNo+ava
+
+sarvawra viBARA goH	
+avaf sPotAyanasya	go+agram
+
+inxre ca		go+inxraH
+
+				prakqwiBAvaH
+				------------
+
+pluwapragqhyA aci	kqRNa 3+awra
+
+ikozsavarNe SAkalya	naxI+awra/Uwplavawi/qNAwi
+			cakrI+Aha/Uhawe/qcCawi
+			vaXU+Aha/icCawi
+
+qwyakaH			brahma/brahmA+qRiH
+			sapwa+qRINAm
+			mAwA+qcCawi
+			kawi+qNAni
+			saKI+qcCawi
+			sa wu+qNAwi
+			vaXU+qcCawi
+			howq/Q/GasL+qNam
+
+BorAjanyaviSAmvewi (vA)	(.*)BHo 3 | BHo 3+ any ajAxipaxa.
+
+xUrAxXUwe ca		xevaxawwa 3+awra
+
+hEheprayoge hEhayoH	rAm hE 3/he 3+AgacCa
+
+I3cAkravarmaNasya	(.*)i 3+asti or any ajAxipaxa.
+
+axaso mAw		amI+ISAH
+			amU+AsAwe
+
+nipAwa ekAjanAf		i+inxraH
+			u+umeSaH
+
+ow			aho+ISAH
+
+				halsanXiH
+				---------
+
+swoH ScunA ScuH		hariH+Sewe
+			rAmaH+cinowi
+			saw+ciw
+			SArfgin+jaya
+			wax+jayawi
+			wax+cayaH
+			waw+jayaH
+
+RtunA RtuH		rAmaH+RaRTaH
+			rAmaH+tIkawe
+			pes+tA
+			waw+tIkA
+			cakrin+DOkase
+			maW+tIkawe
+
+na paxAnwAttoranAm	Rat/d+WakArAH
+			Rat/d+sanwaH
+			Rat/d+we
+			Rat/d+dayanwe
+			Rat/d+DakArAH
+			wad+warawi
+
+yaroznunAsikeznunAsiko	ewax/w+murariH
+
+worli			waw+layaH
+			wax+layaH
+			vixvAn+liKawi
+
+uxaH sWAswmBoH pUrvasya	uw+sWAnam
+			uw+swamBanam
+
+Jayo hoznyawarsyam	vak+hariH
+			ap+hariH
+			waw+hi
+			syAx+hi and any JayavarNa followed by hakAra.
+
+
+SaSCozti		waw+SivaH
+			wax+SivaH
+			Bavew+SafkA
+CawvamamIwi vAcyam	waw+Slokena
+
+moznusvAraH		harim+vanxe and (.*)m+ any hal varNa.
+
+anusvArasya yayi para
+vA paxAnwasya		wvam+karoRi
+			grAmam+gawaH
+			sam+yanwAH
+			sam+vawsaraH
+			yam+lokam
+			Palam+cinowi
+			vyAKyAm+wanowi
+			vyAkaraNam+paTawi
+			akRaram+tafkayawi
+
+mo raji samaH kvO	sam+rAt
+
+he mapare vA		kim+hvalayawi
+			kim+hmalayawi and other wifanwa forms of both XAwus.
+
+napare naH		kim+hnuwe and other forms of the given XAwu.
+
+fNoH kuktuk Sari
+cayo xviwiyASari(vA)	prAf+RaRTaH
+			sugaNa+RaRTaH
+
+daH si Xut		Rad+sanwaH
+
+naSca			san+saH
+			Bavan+saH
+
+Si wuk			san+SamBuH
+
+famo hrasvAxaci famuN	prawyaf+AwmA
+			af+AxeSaH
+			sugaN+ISaH
+			san+anwaH
+			kurvan+Aswe
+
+pumaH Kayyampare
+awrAnunasika
+anunAsikAwparaH		pum+puwraH
+			pum+kokilaH
+			pum+karowi
+			pum+kaWanam
+			pum+paTanam
+
+KyaFAxeSe na(vA)	pum+KyAnam
+
+naCavyapraSAn		SArfgin+CinXi
+			cakrin+wrAyasva
+			BavAn+wu
+			BagavAn+warhi
+			maxIyan+CAwrAn
+
+nQn pe			nQn+pAhi/pATaya
+
+kupvo>< ka><pO ca	kaH+karowi/Kanawi
+			kaH+paTawi/Palawi
+
+kAnAmredite		kAn+kAn
+
+kaskAxiRu ca		kaH+kaH
+			BHA+karaH
+
+Ce ca			sva+CAyA
+			wava+CAwraH
+			Siva+Cawram
+
+AfmAfoSca		A+CAxayawi
+			mA+Cixaw
+
+paxAnwAxvA		lakRmI+CAyA
+			cakrI+Cinawwi
+			vixyawe+CAwraH
+			viRNo+CinXi
+
+
+				visargasanXiH
+				-------------
+
+visarjaniyasya saH	viRNuH+wawra
+			ramaH+wrAyawe
+
+Sarpare visarjaniyaH	kaH+wsaruH
+			GanAGanaH+kRoBaNaH
+			saH+kRarawi
+
+vA Sari			hariH+Sewe
+Karpare sari va visarga	rAmaH+sWAwA
+			hariH+sPurawi
+
+namaspursorgawyoH	namaH+karowi
+			puraH+karowi
+
+wirasoznyawarsyAm	wiraH+karwA
+
+isusoH sAmarWye		sarpiH+karowi
+			sarpiH+kuNdikA
+			XanuH+karowi
+			XanuH+kapAlam
+
+aXaSSirasi paxe		aXaH+paxam
+			SiraH+paxam
+
+
+				svAxisanXiH
+				-----------
+
+
+awo rorpluwAxapluwe	SivaH+arcyaH
+			GataH+aswi
+
+haSi ca			SivaH+vanxyaH
+			rAmaH+gacCawi
+			GataH+xIyawe
+			manaH+raWaH
+
+BoBagoaGoapUrvasya	xevAH+iha
+hali sarveRAm		xevAH+XyeyAH
+vyorlaGuprayawnasya	BoH+acyuwaH
+owo gArgyasya		BoH+xevAH
+			BoH+lakRmIH
+			BoH+vixvanvqxaH
+			BagoH+namaswe
+			aGoH+yahi
+			xevAH+namyAH
+			xevAH+yAnwi
+
+rozsupi			ahan+ahaH
+			ahan+gaNaH
+
+rUparAwriraWanwareRu	ahan+rUpam
+			ahan+rAwri/rAwraH
+			ahan+raWanwaram
+
+aharAXInAm pawyAxiRu	ahan+pawiH
+			gIr+pawiH
+			XUr+pawiH and all forms of all viBakwis.
+
+Dralope pUrvasya XIrGozNaH
+rori			punar+ramawe
+			hariH+ramawe
+			SamBuH+rAjawe	
+
+ewawwaxoH sulopozko	eRaH+viRNuH
+			saH+viRNuH
+			saH+gacCawi
+			eRaH+hasawi

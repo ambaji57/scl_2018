@@ -1,0 +1,54 @@
+VERSION=DISTRIB
+DEBUG=OFF
+
+#Path for installation of all packages.
+SCLINSTALLDIR=/Users/pgoyal/Documents/Toolkits/scl
+
+#Paths for enabling web services
+HTDOCSDIR=/Library/WebServer/Documents/SCL
+SCLURL=http://localhost/SCL
+
+CGIDIR=/Library/WebServer/CGI-Executables/SCL
+CGIURL=http://localhost/cgi-bin/SCL
+
+APACHE_USER_GROUP="_www:_www"
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/usr/bin/perl
+
+#Path for JAVA
+JAVAPATH=/usr/bin/javac
+
+#Path of lt-proc
+LTPROCBINDIR=/opt/local/bin
+
+#Paths for webdot.pl
+GraphvizDot=/opt/local/bin
+#EPSIfilter=/usr/bin/ps2epsi
+#GSPATH=/usr/bin/gs
+#CHKSUM=/usr/bin/cksum
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/opt/local/lib
+
+#for gdbm.h
+IPATH=/opt/local/include
+
+#Perl Library path
+#Path of GDBM_File.pm
+LIB_PERL_PATH=/opt/local/lib/perl5/5.12.4/darwin-thread-multi-2level
+
+#Heritage installation path (for offline_reader)
+HERITAGE_PATH=/Users/pgoyal/Documents/Toolkits/SKT/SktPlatform.2.83/
+HERITAGE_CGIURL=http://localhost/cgi-bin/SKT/sktgraph
+
+#Path for temporary files
+TFPATH=/private/tmp/SKT_TEMP
+TMPPATH=/private/tmp
+
+#Counter
+COUNTER=statcounter_dummy.js

@@ -1,0 +1,1 @@
+SCLINSTALLDIR/NN/segmenter/skt_splitter_server.pl

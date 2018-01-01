@@ -1,0 +1,47 @@
+.link
+{
+background-color:green;
+background-repeat:none;
+font-weight:bold;
+}
+.link a
+{
+color:white;
+text-decoration:none;
+}
+
+/*.link a:hover
+{
+background-color:blue;
+font-size:18px;
+}
+th 
+{
+color:blue;
+}*/
+.symposia  
+{
+background-color:#5C80F0;
+}
+/*.skt a   
+{
+color:white;
+background-color:#454A00;
+text-decoration:none;
+}
+.skt a:hover
+{
+background-color:blue;
+font-size:18px;
+}*/ 
+
+a
+{
+text-decoration:none;
+font-size:15px;
+}
+/*a:hover
+{
+font-size:18px;
+}*/
+

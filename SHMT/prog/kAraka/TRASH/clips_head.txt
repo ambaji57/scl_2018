@@ -1,0 +1,9 @@
+(deftemplate sup (slot id)(slot mid)(slot word)(slot rt)(slot lifgam)(slot viBakwiH)(slot vacanam)(slot level))
+(deftemplate wif (slot id)(slot mid)(slot word)(slot rt)(slot XAwuH)(slot lakAraH)(slot prayogaH)(slot puruRaH)(slot vacanam)(slot paxI)(slot gaNaH)(slot sanAxiH) (slot level))
+(deftemplate kqw (slot id)(slot mid)(slot word)(slot rt)(slot kqw_prawyayaH)(slot lifgam)(slot viBakwiH)(slot vacanam)(slot XAwuH)(slot gaNaH) (slot kqw_vb_rt)(slot sanAxiH)(slot level))
+(deftemplate avy (slot id)(slot mid)(slot word) (slot rt)(slot level))
+(deftemplate avywaxXiwa (slot id)(slot mid)(slot word)(slot rt)(slot waxXiwa_prawyayaH) (slot lifgam)(slot level))
+(deftemplate avykqw (slot id)(slot mid)(slot word)(slot rt)(slot kqw_prawyayaH)(slot XAwuH) (slot gaNaH)(slot level)(slot sanAxiH))
+(deftemplate waxXiwa (slot id)(slot mid)(slot word)(slot rt)(slot waxXiwa_prawyayaH)(slot waxXiwa_rt)(slot lifgam)(slot viBakwiH)(slot vacanam) (slot level))
+
+(deffacts morph_information

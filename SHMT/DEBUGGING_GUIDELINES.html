@@ -1,0 +1,205 @@
+<html>
+<head>
+</head>
+<body>
+
+<!---Symptom 1 -->
+<ul>
+<li> <h4> Symptom: <font color="blue"><a name="NoMorph">One or more cells are white in color</a></font> </h4>
+<h4> Diagnosis: <font color="magenta">The morphological analysis of the corresponding word(s) is not available. </font> </h4>
+<h4> Action: </h4><font color="green">
+<ul>
+
+<li> Open row 'C' to check whether the analysis is present. </li>
+<li> If the morphological analysis is missing, then goto UPDATE-&gt;Morph and provide the correct analysis.  </li>
+<li> Alternately, you can also make additions directly in the $HOME/public_html/scl/SHMT/MT/prog/morph/local_analysis/mo_ana.txt. </li>
+<li> After making the changes, run 'make' to compile the changes and make them effective. </li>
+</ul>
+</font>
+
+<!---Symptom 2 -->
+<li> <h4> Symptom: <font color="blue"><a name="MissingMA">Morph analysis is missing</a></font> </h4>
+<h4> Diagnosis: <font color="magenta">The analysis is pruned out </font> </h4>
+<h4> Action: </h4>
+<font color="green">
+<ul>
+<li> First check whether the analysis is present in 'B' row.
+	      If it is not present, report to ambapradeep@gmail.com
+
+<li> If the analysis is present in 'B' row, then check the pratipadika with its gender in $HOME/scl/public_html/SHMT/MT/prog/prune/default_gen.txt.
+<li> If the pratipadika with the corresponding gender is missing, add to the file, and run 'make'.
+</ul>
+</font>
+
+<!---Symptom 3 -->
+<li> <h4> Symptom: <font color="blue"><a name="NoKaaraka">No kaaraka analysis</a></font> </h4>
+<h4> Diagnosis: <font color="magenta"> Either the Minion constraint solver has failed or the CLIPS program needs improvement. </font> </h4>
+<h4> Action: </h4>
+<ul> <font color="green">
+<li> Check whether it has produced all the possible links by placing the mouse over the sentence number column of row 'A', or opening the image in another window. </li>
+<li> If all the links exist, then the problem is in the 'minion' the constraint solver. Contact ambapradeep@gmail.com along with the sentence. </li>
+<li> If any of the desired link is missing, go to <a href="DEBUGGING_GUIDELINES.html#NoLink">missing link</a> section to provide the missing link. </li> </font>
+</ul>
+</font>
+
+<!---Symptom 4 -->
+<li> <h4> Symptom: <font color="blue"><a name="WrongKaarakaAnalysis">Wrong kaaraka analysis</a></font> </h4>
+<h4> Diagnosis: <font color="magenta">Either the link is not created by the CLIPS program or the desired output is ranked low. </font> </h4>
+<h4> Action: </h4> <font color="green">
+First check whether the desired link exists by bringing the mouse on the 'A' row of the sentence number column.<br>
+<ul>
+<li> If the link exists, then open all the kaaraka analyses by bringing the mouse on 'L' row of the sentence number column. <br>
+Check whether the desired analysis exists as one of the solutions.
+If not, report the bug to ambapradeep@gmail.com
+<li> If the link does not exist, go to <a href="DEBUGGING_GUIDELINES.html#NoLink">missing link</a>.
+</ul>
+</font>
+
+<!---Symptom 5 -->
+<li> <h4> Symptom: <font color="blue"><a name="NoLink">A link is missing.</a></font> </h4>
+<h4> Diagnosis: <font color="magenta">System does not have the necessary information.</font> </h4>
+<h4> Action: </h4> <font color="green">
+<ul>
+<li> First check that the desired morhological analysis exists.
+<li> If not, then go to <a href="DEBUGGING_GUIDELINES.html#">missing morph analysis</a>
+<li> If the desired morphological analysis is present, then
+     check for various relations as mentioned below.
+<ul>
+<li> Missing karma <br>
+     check whether the verb is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/sakarmaka_XAwu_list.
+     If it is not there, add the verb, run 'make'
+<li> Missing karaNa <br>
+     check whether the verb is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/karaNa_XAwu_list.
+     If it is not there, add the verb, run 'make'
+<li> Missing sampraxAna <br>
+     check whether the verb is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/sampraxAna_XAwu_list.
+     If it is not there, add the verb, run 'make'
+<li> Missing apAxAna <br>
+     check whether the verb is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/apAxAna_XAwu_list.
+     If it is not there, add the verb, run 'make'
+ <li>If the verb is dvikarmaka, and only one karma is marked,
+     check whether the verb is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/xvikarmaka_XAwu_list1, or
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/xvikarmaka_XAwu_list2.
+     (xvikarmaka_XAwu_list1 has those dvikarmaka verbs whose 
+      muKya karma is aBihiwa in karmaNi prayoga, and 
+      xvikarmaka_XAwu_list2 has those dvikarmaka verbs whose 
+      gONa karma is aBihiwa in karmaNi prayoga.)
+      If it is not there, add the verb, run 'make'
+
+<li> Missing kAlAXikaraNa <br>
+     check whether the noun is listed in 
+     $HOME/public_html/scl/SHMT/MT/prog/kAraka/list_n/kAlAXikaraNa_list
+     If not present, add and run 'make'.
+</ul>
+</font>
+
+<!---Symptom 6 -->
+
+<li> <h4> Symptom: <font color="blue"><a name="NoHnMng">Meaning is not substituted.</a></font> </h4>
+<h4> Diagnosis: </h4> <font color="magenta"> Dictionary entry needs to be updated. </font>
+<h4> Action: </h4>
+<font color="green">
+Get the category(CAT) of the word (noun,pronoun,avy or verb).
+             Check the entry in the corresponding file in
+              $HOME/public_html/scl/SHMT/MT/data/hi/"CAT".txt <br>
+	      If entry is missing, add new one. <br>
+If entry already exists, report to ambapradeep@gmail.com with the input sentence.
+</font>
+
+<!---Symptom 7 -->
+<li> <h4> Symptom: <font color="blue"><a name="WrongHnMng">Hindi meaning is wrong.</a></font> </h4>
+<h4> Diagnosis: <font color="magenta"> Polysemous word </font> </h4>
+<h4> Action: <font color="green">
+<ul>
+<li> First check that the word is analysed morphologically, 
+              and correct morphological analysis is present, after the 
+              kaaraka analysis step.
+<li> If the word is not analysed correctly morphologically, 
+	      go to <a href="DEBUGGING_GUIDELINES.html#">morph analysis is missing</a>
+<li> If the kaaraka analysis is wrong, POSTPONE handling such cases.
+<li> If the word has correct morph analysis and also has 
+              correct kaaraka analysis, then check whether the word is 
+	      polysemous.
+<li> If the word is not polysemous, check the meaning in
+              $HOME/public_html/scl/SHMT/MT/data/hi/"CAT".txt
+	      where "CAT" is the category(noun/pronoun/avy/verb) of the word.
+
+<li> If the word is polysemous, then WSD rules are to be framed.
+	      Report such words with input sentence to shukla.preetidev@gmail.com
+</ul>
+</font>
+</ul>
+
+<!---Symptom 8 -->
+
+<li> <h4> Symptom: <font color="blue"><a name="HnGen">Hindi generation is not correct.</font> </h4>
+<h4> Diagnosis: </h4>
+<h4> Action: </h4>
+<font color="green"> </h4>
+First check whether the kaaraka analysis is correct.
+If not, then go to <a href="DEBUGGING_GUIDELINES.html#WrongKaarakaAnalysis">wrong kaaraka analysis</a>. <br>
+If the kaaraka analysis is correct, then choose the appropriate one among the following.
+<ul>
+<li> <font color="black">if 'ne' is missing,</font>
+<ul>
+Check whether the sentence is in the past tense, <br>
+the word which requires 'ne' is marked as 'karwA' (in the row 'E'), and <br>
+the verb is not listed in the $HOME/public_html/scl/SHMT/MT/data/hi/ne_excptnl_verbs.txt. 
+<li> If the verb is listed in this list, remove it and run 'make' to compile.
+<li> If the word is not marked as 'karwA', that means the kaaraka analysis is not correct. Go to <a href="DEBUGGING_GUIDELINES.html#WrongKaarakaAnalysis">wrong kaaraka analysis</a>.
+
+</ul>
+<li> <font color="black">The declension of viSeRaNa is not correct.</font>
+<ul>
+   Check that the word is marked as 'viSeRaNa' by opening row 'E'.
+<li> If it is not marked as viSeRaNa, then go to <a href="DEBUGGING_GUIDELINES.html#WrongKaarakaAnalysis">wrong kaaraka analysis</a>.
+<li> If it is marked as a viSeRaNa, then open row 'K' and check whether it has 
+   received correct parameters for generation. 
+<li> If not, the agreement module is defective.
+<li> If the parameters are correct, then go to <a href="DEBUGGING_GUIDELINES.html#">wrong Hindi generation</a>.
+
+</ul>
+<li> <font color="black">The agreement of RaRTI viBakwi is not corre </font>ct.
+<ul>
+   Check whether the kaaraka analysis is correct.
+<li>   If the relation is marked as RaRTI sambanXa then check whether it is related to the correct word. If not, the kaaraka analysis is not correct.
+<li>   If the relation is marked as RaRTI sambanXa, and the word is related to the correct word, check the gender of the word to which it is related.
+<li>   If the gender is feminine, while it should be masculine, remove the word 
+   from $HOME/public_html/scl/SHMT/MT/data/hi/fem_hnd_noun.lst, and run 'make'.
+</ul>
+  
+<li> <font color="black">Agreement of the verb is not correct </font>.
+<ul>
+  Check whether the kaaraka analysis is correct.
+<li>   If it agrees with karwA (or karma), note if it is feminine.
+<li>   If yes, check whether it is present in 
+     $HOME/public_html/scl/SHMT/MT/data/hi/fem_hnd_noun.lst. 
+     If not, add and then run 'make'.
+<li>   If the karwA (or karma) is not feminine, then the program needs to 
+   be checked. Check which program has gone wrong by opening 
+   $HOME/public_html/scl/SHMT/DEMO/tmp_in$$/debug_hindi_gen.
+   Report the bug to ambapradeep@gmail.com with the input sentence and 
+   the nature of the bug.
+
+</ul>
+<li> <font color="black">The declension of the word is not correct. </font> <br>
+   If it is a noun, check the paradigm of the word in the Hindi generator.
+   To check the current paradigm, run the following program:
+   $HOME/public_html/scl/SHMT/MT/prog/hnd_gen/test/get_pdgm.pl <WORD>
+
+   If it is a verb, report to ambapradeep@gmail.com along with the input sentence and the expected verb conjugation.
+
+<li>  <font color="black">ViSeRaNa has an extra vibhakti. </font>  <br>
+   If the kaaraka analysis is correct, this should not happen. A SERIOUS bug.
+   Report with the input sentence.
+
+</ul>
+</ul>
+</font>
+
+</body>

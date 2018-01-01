@@ -1,0 +1,5 @@
+#!/bin/bash
+source ../spec.txt
+
+# Do not edit the following lines.
+perl -i -p -e "s#DEPTURL#$DEPTURL#g; s#SCLURL#$SCLURL#g;" tagged_data.html

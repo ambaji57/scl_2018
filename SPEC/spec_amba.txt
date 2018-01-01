@@ -1,0 +1,58 @@
+VERSION=DEVELOP
+DEBUG=ON
+
+#Path for installation of all packages.
+SCLINSTALLDIR=/home/ambaji/scl
+
+#Paths for enabling web services
+HTDOCSDIR=/var/www/html/scl
+SCLURL=http://localhost/scl
+
+CGIDIR=/usr/lib/cgi-bin/scl
+CGIURL=http://localhost/cgi-bin/scl
+
+APACHE_USER_GROUP=www-data:www-data
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/usr/bin/perl
+
+#Path for JAVA
+JAVAPATH=/usr/bin/javac
+
+#Path of lt-proc
+LTPROCBINDIR=/usr/bin
+
+#Paths for webdot.pl
+GraphvizDot=/usr/bin
+#EPSIfilter=/usr/bin/ps2epsi
+#GSPATH=/usr/bin/gs
+#CHKSUM=/usr/bin/cksum
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/usr/lib
+
+#for gdbm.h
+IPATH=/usr/include
+
+#Perl Library path
+#Path of GDBM_File.pm
+LIB_PERL_PATH=/usr/lib/perl/5.18.2
+
+#Specify the minion version
+#MINION_PATH=/home/ambaji/scl/SHMT/software/minion-0.14
+
+#Heritage installation path (for offline_reader)
+HERITAGE_PATH=/home/ambaji/Heritage/SktEngine.2.96/
+HERITAGE_CGIURL=http://localhost/cgi-bin/SKT/sktgraph
+#HERITAGE_CGIURL=http://localhost/~ambaji/Heritage/sktgraph.cgi
+
+#Path for temporary files
+TFPATH=/tmp/SKT_TEMP
+TMPPATH=/tmp/
+
+#Counter
+COUNTER=statcounter.js

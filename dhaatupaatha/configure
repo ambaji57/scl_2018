@@ -1,0 +1,6 @@
+#!/bin/bash
+source ../spec.txt
+
+# Do not edit the following lines.
+perl -i -p -e "s#COUNTER#$COUNTER#g; s#DEPTURL#$DEPTURL#g; s#SCLURL#$SCLURL#g; s#CGIURL#$CGIURL#g;" compare_without_svara.html compare_with_svara.html index.html arWa.html About.html banner.html gaNa.html XAwu.html
+

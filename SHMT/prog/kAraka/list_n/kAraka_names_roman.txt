@@ -1,0 +1,180 @@
+#upapada-vibhakṭi
+0,sahakāraka
+1,upapadavibhaktiḥ
+2,nitya_sambandhaḥ
+3,pratiyogī
+4,sahāyakakriyā
+
+5,vīpsā
+#6,samuccitam
+
+# kaaraka vibhkaṭi
+7,kartā
+8,kartṛsamānādhikaraṇam
+#ṇoṭe ṭhe orḍer oṅ kartā anḍ katṛsamānādhikaraṇa
+# aśvaḥ śvetaḥ asti: tiṭh ṭhese tṭs, cosṭ = 14+8 = 22
+# īṅ iṭ tere reverse, cosṭ = 16 + 7 = 23
+
+#pradhāna karma shoulḍ be nearer ṭo ṭhe verb.
+# in ṭhe torsṭ case, iṅ gauṇa karma anḍ pradhana karma boṭh are presenṭ, pradhāna karma till be near ṭhe verb (ḍisṭ,1, anḍ gauṇa karma atay ṅrom ṭhe verb (ḍisṭ = 2).
+#śo ṭoṭal ḍisṭance,2*(n-1) + 1*n = 3*n-2
+#īṅ gauṇa karma,n anḍ anḍ pradhāna karma =n-1, ṭhen ṭhe ḍisṭ = 2*n + 1*(n-1) = 3*n-1
+#ḥence ṭhe above orḍer is chosen.
+9,karmasamānādhikaraṇam
+10,mukhyakarma # mukhya karma ; ṭo hanḍle ḍvikarmaka
+11,gauṇakarma # gauṇa karma ; ṭo hanḍle ḍvikarmaka
+12,vākyakarma
+13,karma
+
+#karma is given prioriṭy over prayijya kartā anḍ prayojaka kartā because ṭhe causaṭives are less probable ṭhan ṭhe sakarmaka usage.
+
+#ṭhhis is moveḍ here so ṭhaṭ iṅ a 2nḍ case / 5ṭh case torḍ is a kriyāviśeṣaṇa, iṭ geṭs preṅerence over ṭhe kaaraka relaṭion.
+# ṭho hanḍle more ṭhan one possible kriyāviśeṣaṇas, te proviḍe a special ṭraeṭmenṭ in ṭhe parser.
+#śheeṭal haḍ moveḍ kriyāviśeṣaṇam ṭo 11 ṅrom 25.
+# ī ḍo noṭ have any eviḍence thy she ḍiḍ so. ī am resṭoring iṭs original posiṭion vi. 25. aune reason being ṭhere can be more ṭhan one kriyāviśeṣaṇas. śo iṅ te puṭ iṭ in ṭhe kaaraka region, ṭhen iṭ geṭs resṭricṭeḍ ṭo only one kriyāviśeṣaṇa aṭ a ṭime.
+#aidample tiṭh >1 kriyāviśeṣaṇas
+# उभौ परिवारौ हर्षपूर्वकम् परस्परं वार्ताम् अकुरुताम्
+#karmasamānādhikaraṇam
+
+14,prayojakakartā
+15,prayojyakartā
+18,karaṇam
+19,sampradānam
+20,apādānam
+21,deśādhikaraṇam
+22,kālādhikaraṇam
+23,viṣayādhikaraṇam
+# adhikaraṇa is given less preṅerence over ṭhe speciṅic adhikaraṇas.
+24,pūrvakālaḥ
+#25,kriyāviśeṣaṇam
+#ṃoveḍ back ṭo 11 as śheeṭal ḍiḍ. śee edplanaṭion ṭhere
+
+# non-kaaraka vibhakṭi
+25,adhikaraṇam
+26,kriyāviśeṣaṇam
+27,hetuḥ
+28,sambandhaḥ
+29,pratiṣedhaḥ
+
+#29,pūrvakālaḥ
+30,samānakālaḥ
+31,sambodhanasūcakam
+32,viśeṣaṇam
+33,ṣaṣṭhīsambandhaḥ
+34,tīvratādarśī
+35,abheda
+36,parimāṇa_viśeṣaṇam
+#31,samuccitam
+#32,samuccitam2
+#33,samuccitam3
+#34,samuccitam4
+#35,samuccitam5
+#36,samuccitam6
+#37,samuccitam7
+#38,samuccitaviśeṣaṇam
+#39,samuccitaprayojanam
+#40,samuccitahetu
+#41,samuccitakriyā
+#42,samuccayadyotaka
+
+#42,anyataraḥ  -- the neeḍ ṭo aḍḍ ṭhis.
+
+41,prayojanam
+#īn case oṅ prayojanam/tādarthya, ṭhe teighṭ ṅuncṭion shoulḍ noṭ ṭake inṭo accounṭ ṭhe ḍisṭance.
+#mayūrau prāsādāya śikhare nṛtyatām
+44,anuyogī
+
+# noun/avy-verb relaṭions
+#45,pūrvakālaḥ
+#46,samānakālaḥ
+46,tādarthyam # 27 -> 40; since tādarthya shoulḍ be aṭ leasṭ ṭtice greaṭer ṭhan ṭhe sampradānam; 40 -> 43, since else iṭ clashes tiṭh samuccitaprayojanam
+# 43 -> 46, since prayojanam shoulḍ be given more preṅerence over tādarthya. 
+#mayūrau prāsādāya śikhare nṛtyatām
+47,niṣedhyaḥ
+#39,samāpti_sūcakam
+#40,abhāva_pratiyogikaḥ
+#48,sambodhanasūcakam
+#49,viśeṣaṇam
+50,vikāryakarma  ### ṇauṭh ūśaiḍh in ṭhāghśaiṭh śḥauūḷḍh bhai chḥāṇghaiḍh ṭo khāṣṃā
+
+#samuccitam is given more preṅerence over viśeṣaṇam.
+#rāmaḥ kṛṣṇaḥ ca vanam gacchati.; rāmaḥ is noṭ viśeṣaṇa oṅ kṛṣṇaḥ buṭ samuccita tiṭh kṛṣṇaḥ
+# śeṣa/viśeṣaṇa
+#51,ṣaṣṭhīsambandhaḥ
+52,sambodhyaḥ# ṃore ṭhan one sambodhya is noṭ alloteḍ.
+# ṣaṣṭhī is given lot prioriṭy, ṭo hanḍle cases such as gaṅgāyāḥ nadyāḥ, there boṭh viśeṣya anḍ viśeṣaṇa have 6ṭh case.
+
+53,samuccita
+54,samuccayadyotaka
+## ṭho aḍḍ ṅrom ṭhe ṭagseṭ
+61,vākyasamuccitam
+#anyataraḥ
+62,anantarakālaḥ
+64,madhyasthakartā
+65,nirdhāraṇam
+75,bhāvalakṣaṇasaptamī
+
+97,vākyakarmadyotaka
+98,itthambhūta
+####################################
+### ṭhhese are ṭhe relaṭion names aṅṭer collapsing.
+### ṭhhese are ṭhe relaṭion names ṅor co-reṅerences.
+
+#####################################
+# noun-noun emphaṭic/eṭc (misc) relaṭions
+#48,avadhāraṇam
+
+#verb-avy relaṭions
+#51,niṣedhyaḥ
+#52,vākya_samuccitam
+#53,pūrvabhāvitvam
+#54,avadhiḥ
+
+## ṭhauāḍhḍh
+#sāmyam (brāhmaṇavat adhīte)
+#nirdhāraṇa saptamī/ ṣaṣṭhī
+
+######################
+# olḍ assignmenṭ 1sṭ ocṭ 2010
+#0,upapada_vibhakti
+#1,kartā
+#2,prayojaka_kartā
+#3,prayojya_kartā
+#4,karma
+#5,karma # gauṇa karma ; ṭo hanḍle ḍvikarmaka
+#6,karma # mukhya karma ; ṭo hanḍle ḍvikarmaka
+##pradhāna karma shoulḍ be nearer ṭo ṭhe verb.
+## in ṭhe torsṭ case, iṅ gauṇa karma anḍ pradhana karma boṭh are presenṭ, pradhāna karma till be near ṭhe verb (ḍisṭ,1, anḍ gauṇa karma atay ṅrom ṭhe verb (ḍisṭ = 2).
+##śo ṭoṭal ḍisṭance,2*5 + 1*6 = 16
+##īṅ gauṇa karma,6 anḍ anḍ pradhāna karma =5, ṭhen ṭhe ḍisṭ = 2*6 + 1*5 = 17
+##ḥence ṭhe above orḍer is chosen.
+#7,karaṇa
+#8,sampradāna
+#9,apādāna
+#10,kartā_samānādhikaraṇa
+#11,adhikaraṇa
+#12,deśa_adhikaraṇa
+#13,kāla_adhikaraṇa
+#14,viṣaya_adhikaraṇa
+#15,kriyā_viśeṣaṇa
+#16,karma_samānādhikaraṇa
+#17,vīpsā
+#18,viśeṣaṇa
+#20,tādarthya
+#21,pūrvakālīna
+#22,samānakālīna
+#23,prayojana
+#27,sambandha
+#28,śeṣa_sambandha
+#29,kāraka_ṣaṣṭhī
+#30,niṣedha
+#31,samuccaya
+#32,hetu
+#33,avadhāraṇa
+#34,vākya_samuccaya
+#40,sambodhana
+#41,kriyā_anvayī
+#42,bhūtakāla_darśaka
+#43,samāpti_sūcaka
+#44,upamānam
+#45,upamānadyotaka

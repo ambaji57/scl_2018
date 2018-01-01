@@ -1,0 +1,4 @@
+#!/bin/bash
+source ../../spec.txt
+
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g;" xml_read.cgi Makefile index.html

@@ -1,0 +1,5 @@
+#!/bin/bash
+source ../../spec.txt
+
+# Do not edit the following line.
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LTPROCBINDIR#$LTPROCBINDIR#g; s#SCLURL#$SCLURL#g; s#DEPTURL#$DEPTURL#g; s#TFPATH#$TFPATH#g; s#COUNTER#$COUNTER#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#MODE#$MODE#g; s#TMPPATH#$TMPPATH#g; s#LPATH#$LPATH#g" main_sandhi.pl web_interface/index.html Makefile apavAxa_any.pl internal_sandhi.pl sandhi.pl web_interface/aluk.cgi web_interface/gawi.cgi web_interface/pUrvanipAwa.cgi web_interface/pUrvapaxa.cgi web_interface/samAsAnwa.cgi web_interface/samasaprakaraexpert.cgi web_interface/samAsaprakAra.cgi web_interface/showindex.cgi web_interface/upasarjana.cgi web_interface/uwwarapaxa.cgi alukkArya.c aluk.lex cnvrtutfd2r.c cnvrtwx2utf.c fgetword.c gawi.lex get_sandhied_word.c nonalukkArya.c paxakArya.lex prAwipaxika.lex pUrvapaxa.lex samAsAnwa.lex samAsaprakAra.lex upasarjana.lex uwwarapaxa.lex web_interface/js/callcgiscripts.js web_interface/choice.cgi web_interface/start.html web_interface/index_rmn.html web_interface/expert.html

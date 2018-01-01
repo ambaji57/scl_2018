@@ -1,0 +1,242 @@
+<div class="container-fluid summary " ng-controller="summaryCtrl">
+	<div class="row panel-default">
+		<h3 class="page-header">Summary:</h3>
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-md-3 col-xs-4 col-sm-12">
+				<ul class="sidebar-nav">
+					<li ng-class="{active:current=='sloka1'}" ng-click="current ='sloka1'">Canto-I</li>
+					<li ng-class="{active:current=='sloka2'}" ng-click="current ='sloka2'">Canto-II</li>
+					<li ng-class="{active:current=='sloka3'}" ng-click="current ='sloka3'">Canto-III</li>
+				</ul>
+			</div>
+			
+			
+			
+			
+			
+			<div class="col-md-9 col-xs-8 col-sm-12 summarytext">
+			 	
+			
+				<div ng-show="current == 'sloka1'" >
+				<br/>
+					 <tabset> <!--<tab heading="Static title">Static content</tab> -->
+					<tab ng-repeat="tab in cantos[0].canto1" heading="{{tab.title}}"
+						active="tab.active" disable="tab.disabled"> {{tab.desc}}
+					</tab> <!-- <tab select="alertMe()"> <tab-heading> <i
+						class="glyphicon glyphicon-bell"></i> Alert! </tab-heading> I've got an HTML
+					heading, and a select callback. Pretty cool! </tab>  -->
+					</tabset>
+
+
+					<!-- <div class="panel panel-primary sanskrit">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Sanskrit</h4>
+							</div>
+							<div class="panel-body">
+								
+							</div>
+
+						</div>
+ -->					<!-- 	<div class="panel panel-success hindi">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Hindi</h4>
+							</div>
+							<div class="panel-body">इस सर्ग में नारदजीका द्वारकापुरी
+								में आकर श्रीकृष्ण भगवान् से शिशुपालवध करने का इन्द्र सन्देश देते
+								हैं । जब जगदाधार श्रीकृष्ण भगवान् द्वारकापुरी में लोकशासन कर रहे
+								थे, तब, एकबार नारदजी आकाशमार्ग से उनके यहाँ आये, उन्हें देखकर
+								श्रीकृष्ण भगवान् ने यथोचित अतिथिसत्कार कर उनकी प्रशंसा करते हुए
+								आनेका कारण पूछा । उत्तर में नारदजीने श्रीकृष्ण भगवान् के दर्शन
+								को ही प्रधान कारण बतलाते हुए इन्द्र के सन्देशरूप में शिशुपाल को
+								मारने के लिए कहा तथा उसकी परमावश्यकता प्रदर्शनार्थ शिशुपाल के
+								पूर्वजन्म में 'हिरण्यपकशिपु' तथा 'रावण' होकर देवपीडन आदि उनके
+								औद्धत्यपूर्ण कार्यों को विस्तार के साथ कहा और यह भी कहा कि
+								उन्हें भी नरसिंह तथा दशरथनन्दन राम होकर आपने ही मारा तथा पुनः
+								शिशुपाल के औद्धत्यपूर्ण कार्यों को कहते हुए 'उसे भी आप ही मार
+								सकते हैं' ऐसा कहा । नारदजीद्वारा कथित इन्द्रसन्देश को सुनकर
+								श्रीकृष्ण भगवान् ने क्रोध से भृकृटि चढ़ा ली और शिशुपाल को मारने
+								की स्वीकृति प्राप्त कर नारदजी आकाश को लौट गये ।</div>
+
+						</div>
+						<div class="panel panel-info english">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">English</h4>
+							</div>
+							<div class="panel-body">When Śrī Kṛṣṇa was ruling the world
+								at Dwārakā, sage Nārada descended from heaven to his abode.
+								Having received hospitality as a guest and having been
+								questioned the purpose of his arrival by Śrī Kṛṣṇa, he praised
+								the lord and then replied thus. He conveyed him the command of
+								lord Indra, and incited him to war with his cousin but mortal
+								enemy, Śiśupāla, king of Cedī. At this juncture, the sage
+								reminds him of previous births of Śiśupāla such as
+								'Hiraṇyakaśipu', 'Rāvaṇa' and others, the way they tormented the
+								world and also the way how lord Śrī Kṛṣṇa took initiative to
+								slay them. Having heard the command of Lord Indra through sage
+								Nārada, the lord had uttered an assent and anger took abode in
+								the guise of the curve of his eye-brows on his face that
+								resembled the sky overcast with the comet. Nārada, too ascends
+								back to the sky.</div>
+
+						</div> -->
+
+					</div>
+
+				<div ng-show="current == 'sloka2'">
+						<br/>
+					 <tabset> <!--<tab heading="Static title">Static content</tab> -->
+					<tab ng-repeat="tab in cantos[0].canto2" heading="{{tab.title}}"
+						active="tab.active" disable="tab.disabled"> {{tab.desc}}
+					</tab> <!-- <tab select="alertMe()"> <tab-heading> <i
+						class="glyphicon glyphicon-bell"></i> Alert! </tab-heading> I've got an HTML
+					heading, and a select callback. Pretty cool! </tab>  -->
+					</tabset>
+				
+					<!-- <div class="panel panel-primary sanskrit">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Sanskrit</h4>
+							</div>
+							<div class="panel-body">
+								<p></p>
+
+
+							</div>
+
+						</div> -->
+						<!-- <div class="panel panel-success hindi">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Hindi</h4>
+							</div>
+							<div class="panel-body">
+								<p></p>
+							</div>
+
+						</div>
+ -->						<!-- <div class="panel panel-info english">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">English</h4>
+							</div>
+							<div class="panel-body">
+								<p></p>
+							</div>
+						</div> -->
+
+					</div>
+				<div ng-show="current == 'sloka3'">
+					<br/>
+					 <tabset> <!--<tab heading="Static title">Static content</tab> -->
+					<tab ng-repeat="tab in cantos[0].canto3" heading="{{tab.title}}"
+						active="tab.active" disable="tab.disabled"> {{tab.desc}}
+					</tab> <!-- <tab select="alertMe()"> <tab-heading> <i
+						class="glyphicon glyphicon-bell"></i> Alert! </tab-heading> I've got an HTML
+					heading, and a select callback. Pretty cool! </tab>  -->
+					</tabset>
+				
+						<!-- <div class="panel panel-primary sanskrit">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Sanskrit</h4>
+							</div>
+							<div class="panel-body">
+								<p></p>
+
+
+							</div>
+
+						</div>
+ -->						<!-- <div class="panel panel-success hindi">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">Hindi</h4>
+							</div>
+							<div class="panel-body">
+									।</p>
+							</div>
+
+						</div> -->
+						<!-- <div class="panel panel-info english">
+
+							<div class="panel-heading">
+								<h4 class="panel-title">English</h4>
+							</div>
+							<div class="panel-body">
+								<p></p>
+							</div>
+						</div> -->
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		
+		
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading"
+						tooltip-html-unsafe="Click to view Canto-1 summaries"
+						data-toggle="collapse" data-parent="#accordion"
+						href="javascript:;" data-target="#collapseOne">
+						<h4 class="panel-title">
+							<a class=""> Canto-I </a> <i
+								class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+						</h4>
+
+					</div>
+
+					<div id="collapseOne" class="panel-collapse collapse "
+						aria-expanded="false">
+						<br />
+										</div>
+
+				 canto -II
+				<div class="panel panel-default">
+					<div class="panel-heading"
+						tooltip-html-unsafe="Click to view Canto-II summaries"
+						data-toggle="collapse" data-parent="#accordion"
+						href="javascript:;" data-target="#collapseTwo">
+						<h4 class="panel-title">
+							<a class=""> Canto-II </a> <i
+								class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+						</h4>
+
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse"
+						aria-expanded="flase">
+						<br />
+						
+
+				</div>
+				 Need to add Canto-III here 
+				<div class="panel panel-default">
+					<div class="panel-heading"
+						tooltip-html-unsafe="Click to view Canto-II summaries"
+						data-toggle="collapse" data-parent="#accordion"
+						href="javascript:;" data-target="#collapse3">
+						<h4 class="panel-title">
+							<a class=""> Canto-III </a> <i
+								class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+						</h4>
+
+					</div>
+					<div id="collapse3" class="panel-collapse collapse"
+						aria-expanded="flase">
+						<br />
+						
+
+					</div>
+
+				</div>
+			</div>
+
+		</div> -->
+	</div>
+</div>
+</div> 

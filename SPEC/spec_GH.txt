@@ -1,0 +1,60 @@
+VERSION=DISTRIB
+DEBUG=OFF
+
+#Path for installation of all package. 
+SCLINSTALLDIR=/Users/huet/Sanskrit/SCL/scl
+
+#Paths for enabling web services
+HTDOCSDIR=/Library/WebServer/Documents/SCL
+SCLURL=http://localhost/SCL
+
+#CGIDIR=/usr/lib/cgi-bin
+CGIDIR=/Library/WebServer/CGI-Executables/SCL
+CGIURL=http://localhost/cgi-bin/SCL
+
+#APACHE_USER_GROUP=www-data:www-data
+APACHE_USER_GROUP="_www:_www"
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/opt/local/bin/perl
+
+#Path for JAVA
+JAVAPATH=/usr/bin/javac
+
+#FOR MORPH GEN AND SHMT
+
+#Path of lt-proc
+LTPROCBINDIR=/opt/local/bin
+
+#Paths for webdot.pl
+GraphvizDot=/opt/local/bin
+#EPSIfilter=/opt/local/bin/ps2epsi
+#GSPATH=/opt/local/bin/gs
+#CHKSUM=/usr/bin/cksum
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/opt/local/lib
+
+#for gdbm.h
+#IPATH=/usr/include/
+IPATH=/opt/local/include
+
+#Perl Library path
+#Path of GDBM_File.pm
+LIB_PERL_PATH=/opt/local/lib/perl5/5.16.3/
+
+#Heritage installation path (for offline_reader)
+#HERITAGE_PATH=/home/ambaji/SktPlatform.260/
+HERITAGE_PATH=/Users/huet/SKT
+HERITAGE_CGIURL=http://localhost/cgi-bin/SKT/sktgraph.cgi
+
+#Path for temporary files
+TFPATH=/private/tmp/SKT_TEMP
+TMPPATH=/private/tmp
+
+#Counter
+COUNTER=statcounter_dummy.js

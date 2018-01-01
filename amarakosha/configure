@@ -1,0 +1,8 @@
+#!/bin/bash
+source ../spec.txt
+
+# Do not edit the following lines.
+perl -i -p -e "s#GraphvizDot#$GraphvizDot#g;s#LIB_PERL_PATH#$LIB_PERL_PATH#g; " callrel.pl
+
+perl -i -p -e "s#VERSION#$VERSION#g; s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; s#CGIURL#$CGIURL#g; s#LTPROCBINDIR#$LTPROCBINDIR#g; s#HTDOCSURL#$HTDOCSURL#g;  s#TFPATH#$TFPATH#g; s#COUNTER#$COUNTER#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; " get_all_rel.pl relations.pl relations.sh showMsg.pl shw_stem.pl callrel.pl Makefile web_interface/interface.cgi DBM/create_dbm_key_value.pl DBM/create_rule_onto.pl DBM/create_dbm.pl DBM/create_onto_dbm.pl DBM/create_onto_dbm.pl web_interface/about.html web_interface/banner.html web_interface/frame.html web_interface/index.html web_interface/starting.html
+

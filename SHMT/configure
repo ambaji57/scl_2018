@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source ../spec.txt
+
+perl -i -p -e "s#GraphvizDotps2epsi#$EPSIfilter#g; s#GraphvizDotgs#$GSPATH#g; s#GraphvizDotcksum#$CHKSUM#g; s#GraphvizDot#$GraphvizDot#g; s#CGIURL#$CGIURL#g; s#FONT_PATH#$FONT_PATH#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#TFPATH#$TFPATH#g;"  prog/kAraka/mk_kAraka_help.pl prog/kAraka/mk_graph_help.pl prog/interface/show_graph.cgi prog/interface/show_selected_parse.cgi  prog/interface/show_top_parses.cgi prog/Word_order/call_heritage2anu.cgi
+
+# Do not edit the following lines.
+for i in `find . -iname *.pl`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#HERITAGE_PATH#$HERITAGE_PATH#; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#TFPATH#$TFPATH#g; s#MODE#$MODE#g; s#TMPPATH#$TMPPATH#g;" $i
+done
+
+for i in `find . -iname *.html`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#COUNTER#$COUNTER#g;" $i
+done
+
+for i in `find . -iname *.sh`
+do
+perl -i -p -e "s#TFPATH#$TFPATH#g; s#TMPPATH#$TMPPATH#g; s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LTPROCBINDIR#$LTPROCBINDIR#g; s#HERITAGE_PATH#$HERITAGE_PATH#; s#MODE#$MODE#g; s#TMPPATH#$TMPPATH#g;" $i
+done
+
+perl -i -p -e " s#VERSION#$VERSION#g; s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#HERITAGE_CGIURL#$HERITAGE_CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; s#LPATH#$LPATH#g; s#IPATH#$IPATH#g; s#TFPATH#$TFPATH#g; s#TMPPATH#$TMPPATH#g; s#MODE#$MODE#g; s#CGIURL#$CGIURL#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g;" prog/interface/xhtml_unicode_sn-hi.xsl prog/kAraka/list_n/Makefile Makefile web_interface/test_xml.cgi web_interface/getXML.cgi web_interface/generate.cgi web_interface/options1.cgi web_interface/option.js prog/morph/web_interface/morph.cgi prog/sandhi_splitter/Makefile prog/sandhi_splitter/web_interface/sandhi_splitter.cgi prog/format/Makefile prog/kAraka/web_interface/kAraka.cgi prog/kAraka/call_kAraka_shell.pl prog/kAraka/parser.sh prog/interface/call_parser_summary.cgi prog/interface/show_selected_parse.cgi prog/interface/save_file.cgi prog/interface/show_graph.cgi prog/interface/show_top_parses.cgi prog/format/Makefile prog/morph/bin/Makefile prog/translation/Makefile prog/kAraka/Prepare_Graph/build_graph.ml prog/Heritage_morph_interface/Makefile prog/Word_order/call_heritage2anu.cgi
+
+perl -i -p -e "s#LTPROCBINDIR#$LTPROCBINDIR#g;" prog/sandhi_splitter/sandhi_samaasa_splitting.cpp

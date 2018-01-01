@@ -1,0 +1,23 @@
+apache
+bash
+lttoolbox
+graphviz
+libgdbm (required for CLIPS, and hash tables in perl)
+gcc/g++
+flex
+perl
+python
+javac (for Ashtadhyayi simulator)
+
+Perl modules:
+LWP.pm 
+GDBM_File.pm 
+Log4perl (1.39 or above)
+Time-Out-0.11.tar.gz
+
+To check whether these Perl modules exist on your machine try
+perldoc LWP
+perldoc GDBM_File
+
+If perldoc exists, it means the package is installed.
+If it is not found, then download it from CPAN.org

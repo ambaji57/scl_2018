@@ -1,0 +1,23 @@
+#!/bin/bash
+
+source ../../../../spec.txt
+
+# Do not edit the following lines.
+for i in `find . -iname *.pl`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#TFPATH#$TFPATH#g;" $i
+done
+
+for i in `find . -iname *.html`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#COUNTER#$COUNTER#g" $i
+done
+
+for i in `find . -iname *.sh`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LTPROCBINDIR#$LTPROCBINDIR#g; s#CGIURL#$CGIURL#g; s#FORMAT#$FORMAT#g" $i
+done
+
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; s#CGIURL#$CGIURL#g; s#LPATH#$LPATH#g; s#IPATH#$IPATH#g; s#FORMAT#$FORMAT#g; s#TMPPATH#$TMPPATH#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g;" Makefile web_interface/sandhi_splitter.cgi web_interface/description.html web_interface/index.html web_interface/run.sh
+
+perl -i -p -e "s#LTPROCBINDIR#$LTPROCBINDIR#g;" sandhi_samaasa_splitting.cpp

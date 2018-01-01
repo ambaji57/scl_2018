@@ -1,0 +1,5 @@
+#!/bin/bash
+source ../spec.txt
+
+# Do not edit the following line.
+perl -i -p -e "s#SCLURL#$SCLURL#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#TFPATH#$TFPATH#g; s#CGIDIR#$CGIDIR#g; s#PERLPATH#$PERLPATH#g; s#COUNTER#$COUNTER#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; " index.html index_server.html Makefile modelling-astadhyayi.html relevance-of-language-analysis.html feedback.cgi contributors.html description.html ../js_files/callcgiscripts.js ../js_files/transliteration.js

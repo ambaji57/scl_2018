@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body{
+background-color:#616D7E;
+}
+
+img {
+border-width:5px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-box-shadow:5px 5px 8px #818181;
+-moz-border-radius-bottomright: 10px;
+width:95%;
+height:95%;
+}
+
+.design {
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-box-shadow:5px 5px 8px #818181;
+-moz-border-radius-bottomright: 10px;
+width:85%;
+margin-left:8%;
+margin-right:8%;
+margin-top:15px;
+background-color:white;
+border-width:5px;
+
+}
+
+div#introduction {
+width:85%;
+height:40%;
+margin-left:8%;
+margin-right:8%;
+background-color:white;
+border-width:5px;
+}
+
+.title{
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-box-shadow:5px 5px 8px #818181;
+-moz-border-radius-bottomright: 10px;
+color:white;
+background-color:#2554C7;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+margin-top:15px;
+border-width:5px;
+}
+
+p {
+margin-left:60px;
+margin-right:60px;
+text-align:justify;
+font-size:18;
+}
+
+.step1 li {
+margin-left:60px;
+margin-right:60px;
+padding:5px;
+}
+
+li {
+margin-left:60px;
+margin-right:60px;
+padding:10px;
+}
+
+.step4 li {
+margin-left:60px;
+margin-right:60px;
+padding:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="introduction" class="design">
+<br>
+<div class="title"><br><font size=5><center>संस्कृत -हिन्दी अनुवादकम् अनुसारकम् च</font><br><font size=4>(Sanskrit-Hindi Accessor Cum Machine Translator) Release 0.66 (Feb. 8, 2011)</font><br>&nbsp; </center></font></div>
+<p style="font-size:18px;line-height:30px;">
+A Sanskrit-Hindi Accessor cum Machine Translator is a device that<br>
+a) produces Hindi translation of a Sanskrit text, and also<br>
+b) provides intermediate outputs at various levels viz. पद-विश्लेषण, कारक-विश्लेषण, शब्दार्थ-निर्धारण, आदि . 
+</p>
+<br>
+</div>
+
+<div id="prerequirement" class="design">
+<br>
+<div id="1" style="border-style:solid;border-color:#717D7D;border-width:1px;width:20%;margin-left:30px;background-color:#717D7D;">
+<p><font size=4 color="white">First Step</font></p>
+</div>
+<p style="font-size:18px;line-height:30px;">The present SHMT system works on Linux operating system. The current version of SHMT tested on <a href="http://www.ubuntu.com" style="text-decoration:none;">UBUNTU</a> operating system. We recommoned the <a href="http://www.ubuntu.com" style="text-decoration:none;">UBUNTU 10.04+ </a> operating system. Before installing SHMT system, install all the following <font size=4 color="blue">softwares/packages</font> on your machine. The softwares/packages can be installed from <font color="red">System -> Administration -> Synaptic Package Manager </font>directly.</p>
+<ol>
+<li>g++</li>
+<li>flex</li>
+<li>automake </li>
+<li>libxml2-2.26+</li>
+<li>lttoolbox-3.1+</li>
+<li>apertium3+ </li>
+<li>apache2 [To enable public_html, the instructions with images are given below in Second Step.]</li>
+<li>bash</li>
+<li>Perl (v5)</li>
+<li>Python (v2.0+)</li>
+<li>gdbm library </li>
+<li>Graphviz (v2.20.2+) </li>
+</ol>
+<br>
+</div>
+
+<div class="design" >
+<br>
+<div id="1" style="border-style:solid;border-color:#717D7D;border-width:1px;width:20%;margin-left:30px;background-color:#717D7D;">
+<p><font size=4 color="white">Second Step:</font></p>
+</div>
+<p>In this step, We will see how to enable public_html. Please follow the instructions which are given below:</p>
+<ul>
+<li> <p>Open Terminal from <font color="blue">Application -> Accessories -> Terminel </font></p><br><img src="images/a.jpg"><br></li> 
+
+<li> <p>Type the following commands into bash:</p> <p><center><font color="blue">sudo mv /etc/apache2/mods-available/userdir.* /etc/apache2/mods-enabled/</font></center></p><p>It may ask the password for authentication. Just enter the password. See the screenshot below. </p><br><img src="images/ps.jpg"><br><br></li>
+
+<li> <p>Open the mime.conf file by typing the following commands into bash: <font color="blue">sudo gedit /ete/apache2/mods-enabled/mime.conf </font> and remove <font color="red" size=5>#</font> symbol from begining of the following line <font color="blue">#AddHandler cgi-script  .cgi </font> and also add the following newline <font color="blue"> AddHandler cgi-script  .pl </font>. See the screenshot below.</p><br><img src="images/cc.jpg"><br><br><img src="images/cc1.jpg"><br><br> </li>
+
+
+<li> <p>Open the userdir.conf file by typing the following commands into bash: <font color="blue"> sudo gedit /etc/apache2/mods-enabled/userdir.conf </font> and find <font color="blue">IncludesNoExec </font> text and replace it with <font color="blue">ExecCGI</font> See the screenshot below.</p><br><img src="images/dd.jpg"><br><br><img src="images/dd1.jpg"><br><br></li>
+
+
+<li> <p>Now, to activate public_html support.  Restart apache server by typing following commands into bash <font color="blue"> sudo /etc/init.d/apache2 restart </font> See the pictures below. </p><br><img src="images/restart.jpg"><br><br><img src="images/restart1.jpg"><br><br></li>
+</ul>
+</div>
+<!--
+<div class="step4">
+<br>
+<p><font size=5 color="blue">चतुर्थसोपानम् :</font></p>
+<p> एतस्मिन् सोपाने संस्कृत-हिन्दी-अनुसारकः अनुवादकश्च इति यान्त्रिकोपकरणं कथं स्थापनीयम् इति विद्यते। इतः पूर्व एतदर्थमपेक्षितानि उपकरणानि कथं स्थापनीयानि इति दृष्टम्। अधोलिखितसोपानानि Terminal इति उद्घाट्य क्रमशः टङ्कणीयानि। </p>
+<ol>
+<li> tar -xvzf SHMT.tgz  </li>
+<li> cd SHMT </li>
+<li> make </li>
+<li> su इति टङ्कित्वा सुपर-युजर (Super-user password) इति देयम्। </li>
+<li> make install </li>
+</ol>
+<p> एतेन संस्कृत-हिन्दी-अनुसारकः अनुवादकश्च इत्युपकरणस्य स्थापनं समाप्यते। अधुना Mozilla firefox अथवा अन्यत् Web-browser उद्धाट्य प्रदत्तनीलवर्णीयसङ्केतः टङ्क्यताम्।
+<font color="blue">http://localhost/~guest/SHMT/main/login.html</font> </p>
+
+<br>
+<br>
+</div>
+-->
+
+<div id="install" class="design">
+<br>
+<div id="1" style="border-style:solid;border-color:#717D7D;border-width:1px;width:20%;margin-left:30px;background-color:#717D7D;">
+<p><font size=4 color="white">Third Step:</font></p>
+</div>
+<br>
+<div id="1" style="border-style:solid;border-color:#717D7D;border-width:1px;width:30%;margin-left:30px;background-color:#717D7D;">
+<p><font size=4 color="white">How to install:</font></p>
+</div>
+<ul>
+<li>Open SHMT/MT/Makefile in an editor</li>
+<li>Set the values of APACHE_RUN_USER and APACHE_RUN_GROUP for your linux distribution.</li>
+<li>Save and exit.</li>
+<li>Run the following commands:-</li>
+      <ul><li>  make</li>
+       <li> sudo make install</li></ul>
+</ul>
+<div id="1" style="border-style:solid;border-color:#717D7D;border-width:1px;width:30%;margin-left:30px;background-color:#717D7D;">
+<p><font size=4 color="white">How to Run:</font></p>
+</div>
+
+<p>in Web mode:</p>
+<div id="1" style="border-style:solid;border-color:none;border-width:1px;width:80%;margin-left:30px;background-color:#463E41;">
+       <p style="color:white;"> in firefox: http://localhost/~userid/scl/SHMT/shmt.html</p>
+</div>
+
+<p>in batch mode:</p>
+<div id="1" style="border-style:solid;border-color:none;border-width:1px;width:80%;margin-left:30px;background-color:#463E41;">
+<p style="color:white;">mkdir $HOME/public_html/scl/SHMT/MT/prog/test</p>
+</div>
+<p>create a file in WX notation in this directory</p>
+<div id="1" style="border-style:solid;border-color:none;border-width:1px;width:80%;margin-left:30px;background-color:#463E41;">
+<p style="color:white;">../shell/anu_skt_hnd_batch.sh &lt;file&gt;</p>
+<p style="color:white;">o/p is in &lt;file&gt;_frame.html
+<p style="color:white;">&lt;file&gt;_translate.html contains the translation.</p>
+<p style="color:white;">&lt;file&gt;.html contains the intermediate o/ps.</p>
+</div>
+<p>&nbsp;</p>
+</div>
+
+<div id="contact" class="design">
+<p>&nbsp;</p>
+<p>For any further assistance contact: <font color="blue">ambapradeep@gmail.com</font> (16/01/2011)</p>
+<p>&nbsp;</p>
+</div>
+
+</div>
+
+</body>
+</html>
+

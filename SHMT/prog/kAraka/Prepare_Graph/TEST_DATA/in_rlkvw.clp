@@ -1,0 +1,5 @@
+(sup (id 1) (mid 1) (word rAmaH) (rt rAma) (lifgam puM) (viBakwiH 1) (vacanam eka) (level 1) )
+(wif (id 1) (mid 2) (word rAmaH) (rt rA1) (sanAxiH X) (prayogaH karwari) (lakAraH lat) (puruRaH u) (vacanam bahu) (paxI parasmEpaxI) (XAwuH rA) (gaNaH axAxiH) (level 1) )
+(sup (id 2) (mid 1) (word gqham) (rt gqha) (lifgam napuM) (viBakwiH 1) (vacanam eka) (level 1) )
+(sup (id 2) (mid 2) (word gqham) (rt gqha) (lifgam napuM) (viBakwiH 2) (vacanam eka) (level 1) )
+(kqw (id 3) (mid 1) (word gawavAn) (kqw_vb_rt gam1) (sanAxiH X) (kqw_prawyayaH kwavawu) (XAwuH gamLz) (gaNaH BvAxiH) (rt gawavaw) (lifgam puM) (viBakwiH 1) (vacanam eka) (level 2) )

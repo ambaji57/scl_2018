@@ -1,0 +1,44 @@
+<solution num=25>
+<form wx="xaSa"/><tags phase=iic>
+<tag><morph><choice></iic></choice></morph><stem><entry wx="xaSan"/></stem></tag></tags>
+<form wx="raWasya"/><tags phase=noun>
+<tag><morph><choice></g></sg></m></choice></morph><stem><entry wx="raWa"/></stem></tag></tags>
+<form wx="puwraH"/><tags phase=noun>
+<tag><morph><choice></nom></sg></m></choice></morph><stem><entry wx="puwra"/></stem></tag></tags>
+<form wx="rAmaH"/><tags phase=noun>
+<tag><morph><choice></nom></sg></m></choice></morph><stem><entry wx="rAma"/></stem></tag></tags>
+<form wx="nagare"/><tags phase=noun>
+<tag><morph><choice></loc></sg></m></choice><choice></acc></du></n></choice><choice></nom></du></n></choice><choice></loc></sg></n></choice></morph><stem><entry wx="nagara"/></stem></tag></tags>
+<form wx="koSAw"/><tags phase=noun>
+<tag><morph><choice></abl></sg></m></choice></morph><stem><entry wx="koSa"/></stem></tag></tags>
+<form wx="haswena"/><tags phase=noun>
+<tag><morph><choice></i></sg></m></choice></morph><stem><entry wx="haswa"/></stem></tag></tags>
+<form wx="brAhmaNAya"/><tags phase=noun>
+<tag><morph><choice></dat></sg></m></choice><choice></dat></sg></n></choice></morph><stem><entry wx="brAhmaNa"/></stem></tag></tags>
+<form wx="gAm"/><tags phase=noun>
+<tag><morph><choice></acc></sg></m></choice><choice></acc></sg></f></choice></morph><stem><entry wx="go"/></stem></tag></tags>
+<form wx="xaxAwi"/><tags phase=root>
+<tag><morph><choice></pr gana=3></ac></sg></thd></choice></morph><stem><entry wx="xA#1"/></stem></tag></tags>
+</solution>
+<solution num=121>
+<form wx="xaSa"/><tags phase=iic>
+<tag><morph><choice></iic></choice></morph><stem><entry wx="xaSan"/></stem></tag></tags>
+<form wx="raWasya"/><tags phase=ifc>
+<tag><morph><choice></g></sg></n></choice></morph><stem><entry wx="raWa"/></stem></tag></tags>
+<form wx="puwraH"/><tags phase=noun>
+<tag><morph><choice></nom></sg></m></choice></morph><stem><entry wx="puwra"/></stem></tag></tags>
+<form wx="rAmaH"/><tags phase=noun>
+<tag><morph><choice></nom></sg></m></choice></morph><stem><entry wx="rAma"/></stem></tag></tags>
+<form wx="nagare"/><tags phase=noun>
+<tag><morph><choice></loc></sg></m></choice><choice></acc></du></n></choice><choice></nom></du></n></choice><choice></loc></sg></n></choice></morph><stem><entry wx="nagara"/></stem></tag></tags>
+<form wx="koSAw"/><tags phase=noun>
+<tag><morph><choice></abl></sg></m></choice></morph><stem><entry wx="koSa"/></stem></tag></tags>
+<form wx="haswena"/><tags phase=noun>
+<tag><morph><choice></i></sg></m></choice></morph><stem><entry wx="haswa"/></stem></tag></tags>
+<form wx="brAhmaNAya"/><tags phase=noun>
+<tag><morph><choice></dat></sg></m></choice><choice></dat></sg></n></choice></morph><stem><entry wx="brAhmaNa"/></stem></tag></tags>
+<form wx="gAm"/><tags phase=noun>
+<tag><morph><choice></acc></sg></m></choice><choice></acc></sg></f></choice></morph><stem><entry wx="go"/></stem></tag></tags>
+<form wx="xaxAwi"/><tags phase=root>
+<tag><morph><choice></pr gana=3></ac></sg></thd></choice></morph><stem><entry wx="xA#1"/></stem></tag></tags>
+</solution>

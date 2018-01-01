@@ -1,0 +1,57 @@
+#!PERLPATH -I LIB_PERL_PATH/
+
+#  Copyright (C) 2014-2017 Amba Kulkarni (ambapradeep@gmail.com)
+#
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License
+#  as published by the Free Software Foundation; either
+#  version 2 of the License, or (at your option) any later
+#  version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+package main;
+use warnings;
+use CGI qw( :standard );
+
+my $myPATH="SCLINSTALLDIR";
+require "$myPATH/converters/convert.pl";
+require "$myPATH/NN/common/style.pl";
+
+system("mkdir -p TFPATH");
+
+      my $cgi = new CGI;
+      print $cgi->header (-charset => 'UTF-8');
+
+      print $style_header;
+      print $title;
+
+      if (param) {
+        $text=param("nne");
+        $encoding=param("encoding");
+
+        $textwx=&convert($encoding,$text);
+        $textutf = `echo $textwx | $myPATH/converters/wx2utf8.sh`;
+
+
+        print "<center>";
+        print "<span>To see the sandhi rule, place the 
+        cursor on the hyphen '-'.<br /> <span>\"Parse\", will take you 
+        to the interactive interface for constituency parseing.</span> 
+        <br /></center><ul class=\"list-inline\"><center>";
+        $output = `$myPATH/NN/segmenter/start_server.sh; echo $textwx | $myPATH/NN/segmenter/split_samAsa_greedy.pl | $myPATH/converters/wx2utf8.sh | $myPATH/NN/segmenter/format.pl`;
+
+       print "<font color=\"red\">$textutf</font>";
+       print "$output";
+        print "<font color=\"black\">";
+       print "</center>";
+
+      }
+      print $style_tail;

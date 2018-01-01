@@ -1,0 +1,38 @@
+VERSION=DEVELOP
+DEBUG=OFF
+
+#Path for installation of all packages.
+SCLINSTALLDIR=/home/ambaji/scl_amara
+
+#Paths for enabling web services
+HTDOCSDIR=/var/www/htdocs/scl_amara
+SCLURL=http://localhost/htdocs/scl_amara
+
+CGIDIR=/usr/lib/cgi-bin/scl_amara
+CGIURL=http://localhost/cgi-bin/scl_amara
+
+APACHE_USER_GROUP=www-data:www-data
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/usr/bin/perl
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/usr/lib
+
+#for gdbm.h
+IPATH=/usr/include
+
+#Perl Library path
+#Path of GDBM_File.pm
+LIB_PERL_PATH=/usr/lib/perl/5.18.2
+
+#Path for temporary files
+TFPATH=/tmp/SKT_TEMP
+TMPPATH=/tmp/
+
+#Counter
+COUNTER=statcounter_dummy.js

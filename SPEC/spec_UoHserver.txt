@@ -1,0 +1,55 @@
+VERSION=DEVELOP
+DEBUG=OFF
+
+#Path for installation of all packages.
+SCLINSTALLDIR=/home/anusaaraka/scl
+
+#Paths for enabling web services
+HTDOCSDIR=/var/www/htdocs/scl
+SCLURL=http://sanskrit.uohyd.ac.in/scl
+
+CGIDIR=/usr/lib/cgi-bin/scl
+CGIURL=http://sanskrit.uohyd.ac.in/cgi-bin/scl
+
+APACHE_USER_GROUP=www-data:www-data
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/usr/bin/perl
+
+#Path for JAVA
+JAVAPATH=/usr/bin/javac
+
+#Path of lt-proc
+LTPROCBINDIR=/usr/bin
+
+#Paths for webdot.pl
+GraphvizDot=/usr/bin
+#EPSIfilter=/usr/bin/ps2epsi
+#GSPATH=/usr/bin/gs
+#CHKSUM=/usr/bin/cksum
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/usr/lib
+
+#for gdbm.h
+IPATH=/usr/include
+
+#Perl Library path
+#Path of GDBM_File.pm
+LIB_PERL_PATH=/usr/lib/perl/5.18.2
+
+#Heritage installation path (for offline_reader)
+HERITAGE_PATH=/home/anusaaraka/SktPlatform.2.83/
+HERITAGE_CGIURL=http://sanskrit.uohyd.ac.in/~anusaaraka/Heritage/sktgraph.cgi
+
+#Path for temporary files
+TFPATH=/tmp/SKT_TEMP
+TMPPATH=/tmp/
+
+#Counter
+COUNTER=statcounter.js
+

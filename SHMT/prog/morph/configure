@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source ../../../../spec.txt
+
+# Do not edit the following lines.
+for i in `find . -iname *.cgi`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#TFPATH#$TFPATH#g; s#MODE#$MODE#g;" $i
+done
+
+for i in `find . -iname *.pl`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g; s#TFPATH#$TFPATH#g;" $i
+done
+
+for i in `find . -iname *.html`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#CGIURL#$CGIURL#g; s#COUNTER#$COUNTER#g" $i
+done
+
+for i in `find . -iname *.sh`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LTPROCBINDIR#$LTPROCBINDIR#g; s#CGIURL#$CGIURL#g; s#FORMAT#$FORMAT#g; s#MODE#$MODE#g;" $i
+done
+
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; s#CGIURL#$CGIURL#g; s#LPATH#$LPATH#g; s#IPATH#$IPATH#g; s#TFPATH#$TFPATH#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g;" web_interface/morph.cgi Makefile ../interface/modify_mo_fn.pl ../interface/modify_mo_for_display.pl
+

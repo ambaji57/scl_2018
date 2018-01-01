@@ -1,0 +1,96 @@
+<html>
+<!--
+	#  Copyright (C) 2002-2012 Amba Kulkarni (ambapradeep@gmail.com)
+#
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License
+#  as published by the Free Software Foundation; either
+#  version 2 of the License, or (at your option) any later
+#  version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./dic.css" type="text/css">
+<!--        Script by hscripts.com          -->
+<!--        copyright of HIOX INDIA         -->
+
+
+<!-- more scripts @ http://www.hscripts.com -->
+
+<script type="text/javascript">
+var rev = "fwd";
+function titlebar(val)
+{
+	var res = " ";
+	var speed = 100;
+	var pos = val;
+
+
+
+	msg = "   |--- "+msg+" ---|";
+	var le = msg.length;
+	if(rev == "fwd"){
+		if(pos < le){
+		pos = pos+1;
+		scroll = msg.substr(0,pos);
+		document.title = scroll;
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+
+
+		}
+		else{
+		rev = "bwd";
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+	}
+	else{
+		if(pos > 0){
+		pos = pos-1;
+		var ale = le-pos;
+		scrol = msg.substr(ale,le);
+
+
+		document.title = scrol;
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+		}
+		else{
+		rev = "fwd";
+		timer = window.setTimeout("titlebar("+pos+")",speed);
+
+
+		}	
+	}
+}
+
+
+</script>
+</head>
+<body bgcolor=antiquewhite>
+<div class=container align=center>
+<h2> Department Of Sanskrit Studies </h2>
+<h3> Univeristy Of Hyderabad </h1>
+<p><b>Apte dictionary</b></p>
+</div><br /><!-- closing of container division -->
+<div class="main" align=center>
+<form name="test" method=post action="CGIURL/dictionaries/Apte-Skt-Hnd/xml_read.cgi" target="showresults">
+<label class=label> English Word </label>
+<input type="text" value="" id="word" name="word" class=textbox>
+<input type="submit" value="Find" id=sbtn class=button>
+</div>
+</form>
+<div class=display>
+<iframe name="showresults" class="ifram"frameborder="0" width="100%" height="2000"></iframe>
+</div> <!-- closing of display div-->
+</body>
+</html>

@@ -1,0 +1,15 @@
+SHELL = /bin/bash
+
+.PHONY:all
+
+all:sandhi_samaasa_splitter.out
+
+sandhi_samaasa_splitter.out: sandhi_samaasa_splitting.cpp
+	g++ -o sandhi_samaasa_splitter.out sandhi_samaasa_splitting.cpp
+
+install:
+	mkdir -p /var/www/htdocs/scl/sandhi_splitter;mkdir -p CGIDIR/sandhi_splitter;cp web_interface/*.html /var/www/htdocs/scl/sandhi_splitter; cp web_interface/*.cgi CGIDIR/sandhi_splitter;  cp web_interface/logouoh.png /var/www/htdocs/scl/sandhi_splitter; cp web_interface/*.css /var/www/htdocs/scl/sandhi_splitter; cp web_interface/logo.gif /var/www/htdocs/scl/sandhi_splitter;
+
+debian_install:
+	mkdir -p /tmp/scl//var/www/htdocs/scl/sandhi_splitter;mkdir -p /tmp/scl/CGIDIR/sandhi_splitter;cp web_interface/*.html /tmp/scl//var/www/htdocs/scl/sandhi_splitter; cp web_interface/*.cgi /tmp/scl/CGIDIR/sandhi_splitter;  cp web_interface/logouoh.png /tmp/scl//var/www/htdocs/scl/sandhi_splitter; cp web_interface/*.css /tmp/scl//var/www/htdocs/scl/sandhi_splitter; cp -pr web_interface/images /var/www/htdocs/scl/sandhi_splitter;
+

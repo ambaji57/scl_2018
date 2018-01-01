@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>शिशुपालवधम् - माघः (Śiśupālavadha of Māgha)</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+   -->  <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body ng-app="webapp">
+    <div>
+    <header>
+            <nav class="navbar navbar-default container-fluid">
+                    <div class="container-fluid header">
+
+                        <div class="navbar-header page-scroll ng-scope">
+                            <button data-target="" data-toggle="collapse" class="navbar-toggle" type="button" id="menu-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h3><a href="#page-top" class="navbar-brand ng-binding">शिशुपालवधम् - माघः (Śiśupālavadha of Māgha)</a></h3>
+                        </div>
+                         <div class="navbar-right">
+                                <h3>Dr. Ryali Anupama</h3>
+                         </div>
+
+                        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse ng-scope">
+                           <!-- <ul class="nav navbar-nav navbar-right">
+                                <li class="hidden active">
+                                    <a href="#page-top"></a>
+                                </li>
+
+                                <li class="page-scroll">
+                                    <a href="index.html">Home</a>
+                                </li>
+
+                                <li class="page-scroll">
+                                    <a href="#books">Books</a>
+                                </li>
+                                <!-- <li class="page-scroll">
+                        <a href="#linguistics">linguistics</a>
+                    </li>
+                                <li class="page-scroll">
+                                    <a href="images.html">Images</a>
+                                </li>
+                                <li class="page-scroll">
+                                    <a href="#links">Links</a>
+                                </li>
+                                <li class="page-scroll  dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="more.html#ling">Linguistics</a></li>
+                                        <li><a href="more.html#pit">Pitikalu</a></li>
+                                        <li><a href="more.html#vya">Vyasalu</a></li>
+                                        <li><a href="more.html#sam">Sampadakiyalu</a></li>
+
+                                        <li>
+                                            <a href=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="page-scroll">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li class="page-scroll">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                    
+                </nav>
+            <div class="container-fluid subheader">
+                <nav class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="page-scroll">
+                           <a href="#/"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#/about"><i class="fa fa-user"></i> About Us</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#/preface"><i class="fa fa-list-alt"></i> Preface</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#/poet"><i class="fa fa-book"></i> The Poet</a>
+                        </li>
+                         <li class="page-scroll">
+                            <a href="#/epic"><i class="fa fa-book"></i> Source Epic</a>
+                        </li>
+                         <li class="page-scroll">
+                            <a href="#/summary"><i class="fa fa-book"></i> Summaries</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#/contact"><i class="fa fa-mobile-phone"></i> Contact Us</a>
+                        </li>
+ 
+                        
+                        
+                    </ul>
+                </nav>
+                
+            </div>
+    </header>
+    <section>
+    	<div class="container-fluid middle" ng-controller="homeCtrl">
+    			<ui-view></ui-view>
+    	</div>
+    	<div style="clear:both"></div>
+    </section>
+    </div>
+   <!--  <footer>
+    <div class="container">
+                This footer section will come here ....
+    </div>
+    </footer> -->
+     <script src="js/jquery.js" type="text/javascript"></script>
+     <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="js/angular-ui-router.min.js" type="text/javascript"></script>
+    <script src="js/ui-bootstrap.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/build.min.js"></script>
+    <script src="js/wz_tooltip.js" type="text/javascript"></script>
+    <script>
+            $(document).ready(function(){
+                     $('[data-toggle="tooltip"]').tooltip();
+                     $("html").niceScroll({styler:"fb",cursorcolor:"#000",cursoropacitymax:"1",autohidemode:false});
+                    
+                 });
+        
+        </script>
+</body>
+</html>

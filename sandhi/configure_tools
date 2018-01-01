@@ -1,0 +1,5 @@
+#!/bin/bash
+source ../my_spec.txt
+
+# Do not edit the following line.
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; -e s#HTDOCSDIR#$HTDOCSDIR#g;" apavAxa_any.pl any_sandhi.pl web_interface/contributors.html callsandhi.pl web_interface/sandhi_dit.cgi web_interface/sandhi_head.html web_interface/sandhi_dit.html sandhi.pl web_interface/table.html test_sandhi.pl web_interface/index.html Makefile web_interface/index_dit.html web_interface/sandhi_dit.html

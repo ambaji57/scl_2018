@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source ../my_spec.txt
+
+perl -i -p -e "s#GraphvizDot#$GraphvizDot#g; s#CGIURL#$CGIURL#g; s#FONT_PATH#$FONT_PATH#g" MT/software/webdot.pl MT/software/webdot.pl MT/prog/kAraka/mk_kAraka_help.pl MT/prog/kAraka/mk_graph_help.pl
+
+# Do not edit the following lines.
+for i in `find . -iname *.pl`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g;" $i
+done
+
+for i in `find . -iname *.html`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; " $i
+done
+
+for i in `find . -iname *.sh`
+do
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LTPROCBINDIR#$LTPROCBINDIR#g" $i
+done
+
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; s#MINION_PATH#$MINION_PATH#g;  s#LPATH#$LPATH#g; s#IPATH#$IPATH#g; s#TFPATH#$TFPATH#g;" MT/prog/interface/xhtml_unicode_sn-hi.xsl MT/prog/kAraka/list_n/Makefile MT/Makefile_tools web_interface/test_xml.cgi MT/prog/morph/web_interface/morph.cgi MT/prog/sandhi_splitter/Makefile MT/prog/sandhi_splitter/web_interface/sandhi_splitter.cgi MT/software/CLIPS/Makefile MT/prog/format/Makefile MT/prog/kAraka/web_interface/kAraka.cgi MT/prog/kAraka/call_kAraka_shell.pl MT/prog/kAraka/parser.sh
+
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source ../spec.txt
+
+# Do not edit the following line.
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#JAVAPATH#$JAVAPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIURL#$CGIURL#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g;  s#COUNTER#$COUNTER#g; s#LIB_PERL_PATH#$LIB_PERL_PATH#g;s#TFPATH#$TFPATH#g; s#TMPPATH#$TMPPATH#g;" ./web_interface/ashtadhyayi.html ./web_interface/simulation.cgi ./web_interface/simulation_head.html ./web_interface/aRt.html ./web_interface/contributors.html ./callrun.pl ./june12/Makefile ./june12/run.sh ./june12/get_SabdarUpa_new.java
